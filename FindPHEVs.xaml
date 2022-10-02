@@ -62,9 +62,9 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <Flowchart.StartNode>
-              <x:Reference>__ReferenceID2</x:Reference>
+              <x:Reference>__ReferenceID3</x:Reference>
             </Flowchart.StartNode>
-            <FlowStep x:Name="__ReferenceID2">
+            <FlowStep x:Name="__ReferenceID3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">190,114.5</av:Point>
@@ -115,7 +115,7 @@
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">190,267</av:Point>
                           <av:Size x:Key="ShapeSize">200,66</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">300,333 300,394.5</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">290,333 290,364.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_5">
@@ -150,6 +150,23 @@
                           </ui:BrowserScope.Body>
                         </ui:BrowserScope>
                       </Sequence>
+                      <FlowStep.Next>
+                        <FlowStep x:Name="__ReferenceID2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:Point x:Key="ShapeLocation">190,364.5</av:Point>
+                              <av:Size x:Key="ShapeSize">200,51</av:Size>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="PHEV Data" StartingCell="A1" WorkbookPath="C:\Users\Jiaru\Documents\UiPath\PHEV\result.xlsx">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:WriteRange>
+                        </FlowStep>
+                      </FlowStep.Next>
                     </FlowStep>
                   </FlowStep.Next>
                 </FlowStep>
@@ -157,6 +174,7 @@
             </FlowStep>
             <x:Reference>__ReferenceID0</x:Reference>
             <x:Reference>__ReferenceID1</x:Reference>
+            <x:Reference>__ReferenceID2</x:Reference>
           </Flowchart>
         </Sequence>
       </ui:CommentOut.Body>
