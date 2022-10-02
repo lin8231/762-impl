@@ -62,9 +62,9 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <Flowchart.StartNode>
-              <x:Reference>__ReferenceID1</x:Reference>
+              <x:Reference>__ReferenceID2</x:Reference>
             </Flowchart.StartNode>
-            <FlowStep x:Name="__ReferenceID1">
+            <FlowStep x:Name="__ReferenceID2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">190,114.5</av:Point>
@@ -99,7 +99,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">190,199</av:Point>
                       <av:Size x:Key="ShapeSize">200,22</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">300,221 300,267</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">290,221 290,267</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_1">
@@ -109,10 +109,54 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Delay>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">190,267</av:Point>
+                          <av:Size x:Key="ShapeSize">200,66</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">300,333 300,394.5</av:PointCollection>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Carsforsa Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="abbc55b9ca47bc64ea6b069223ec7fd0" Selector="&lt;html app='chrome.exe' title='Cars for sale | Trade Me Motors' /&gt;">
+                          <ui:BrowserScope.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:ExtractData ContinueOnError="True" DataTable="[ExtractDataTable]" DelayBetweenPagesMS="4000" DisplayName="Extract Structured Data 'TG-ROW'" ExtractMetadata="&lt;extract&gt;    &lt;row exact='1'&gt;        &lt;webctrl tag='tg-col'/&gt;        &lt;webctrl tag='tm-search-card-switcher' idx='1'/&gt;        &lt;webctrl tag='tm-motors-advanced-search-card' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='a' idx='1'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;    &lt;/row&gt;    &lt;column exact='1' name='Listing Name' attr='text' name2='URL' attr2='href'&gt;        &lt;webctrl tag='tg-col'/&gt;        &lt;webctrl tag='tm-search-card-switcher' idx='1'/&gt;        &lt;webctrl tag='tm-motors-advanced-search-card' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='a' idx='1'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;    &lt;/column&gt;    &lt;column exact='1' name='Vehicle Type' attr='text'&gt;        &lt;webctrl tag='tg-col'/&gt;        &lt;webctrl tag='tm-search-card-switcher' idx='1'/&gt;        &lt;webctrl tag='tm-motors-advanced-search-card' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='a' idx='1'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='3'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;    &lt;/column&gt;    &lt;column exact='1' name='Mileage' attr='text'&gt;        &lt;webctrl tag='tg-col'/&gt;        &lt;webctrl tag='tm-search-card-switcher' idx='1'/&gt;        &lt;webctrl tag='tm-motors-advanced-search-card' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='a' idx='1'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='3'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;        &lt;webctrl tag='span' idx='1'/&gt;    &lt;/column&gt;    &lt;column exact='1' name='Engine Details' attr='text'&gt;        &lt;webctrl tag='tg-col'/&gt;        &lt;webctrl tag='tm-search-card-switcher' idx='1'/&gt;        &lt;webctrl tag='tm-motors-advanced-search-card' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='a' idx='1'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='3'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;        &lt;webctrl tag='span' idx='2'/&gt;    &lt;/column&gt;    &lt;column exact='1' name='Subtitle' attr='text'&gt;        &lt;webctrl tag='tg-col'/&gt;        &lt;webctrl tag='tm-search-card-switcher' idx='1'/&gt;        &lt;webctrl tag='tm-motors-advanced-search-card' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='a' idx='1'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='4'/&gt;    &lt;/column&gt;    &lt;column exact='1' name='Pricing' attr='text'&gt;        &lt;webctrl tag='tg-col'/&gt;        &lt;webctrl tag='tm-search-card-switcher' idx='1'/&gt;        &lt;webctrl tag='tm-motors-advanced-search-card' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;        &lt;webctrl tag='a' idx='1'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;        &lt;webctrl tag='div' idx='2'/&gt;        &lt;webctrl tag='div' idx='1'/&gt;    &lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="9999" NextLinkSelector="&lt;webctrl aaname=' Next ' tag='A' /&gt;" SimulateClick="True">
+                                  <ui:ExtractData.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ba270314-aa05-48d9-bbea-d29898e70aa5" InformativeScreenshot="8b22b2cf43bae7cff798e762756633bb" Selector="&lt;webctrl css-selector='body&amp;gt;tm-root&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;tm-motors-search-results&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;tm-search-results&amp;gt;div&amp;gt;div&amp;gt;tm-potential-r18-content&amp;gt;div&amp;gt;tg-row' tag='TG-ROW' /&gt;" WaitForReady="COMPLETE">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                    </ui:Target>
+                                  </ui:ExtractData.Target>
+                                </ui:ExtractData>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:BrowserScope.Body>
+                        </ui:BrowserScope>
+                      </Sequence>
+                    </FlowStep>
+                  </FlowStep.Next>
                 </FlowStep>
               </FlowStep.Next>
             </FlowStep>
             <x:Reference>__ReferenceID0</x:Reference>
+            <x:Reference>__ReferenceID1</x:Reference>
           </Flowchart>
         </Sequence>
       </ui:CommentOut.Body>
