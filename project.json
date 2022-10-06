@@ -3,7 +3,6 @@
   "description": "762 Team 3 Project implementation",
   "main": "Main.xaml",
   "dependencies": {
-    "KanadCharting.Activities": "[1.0.0]",
     "UiPath.Excel.Activities": "[2.12.3]",
     "UiPath.Mail.Activities": "[1.15.2]",
     "UiPath.System.Activities": "[22.4.5]",
