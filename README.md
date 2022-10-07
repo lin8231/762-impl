@@ -2,6 +2,8 @@
 
 Environmentally Friendly Second-hand Cars
 
+---
+
 ## Implementation by
 
 * **Mercury Lin**: Scraping data and storing to Excel
@@ -17,17 +19,18 @@ Environmentally Friendly Second-hand Cars
 ## Usage
 
 1. Clone repo and open process in UiPath
-2. Open file named FindPHEVs.xaml _<= To be change to Main.xaml_
+2. Open file named `Main.xaml`
 3. **Make sure there are no instances of the relevant trademe page running on Edge**
 4. **Make sure all the spreadsheet files are NOT opened or being accessed somewhere else**
-5. Press `Ctrl + F6` to run (This will take approx 5 minutes, please don't close UiPath or terminate the automation within this time)
+5. Press `Ctrl + F5` or click button to run the project (This will take a long while, please don't close UiPath or terminate the automation within this time)
 6. After the automation is completed
     * the results of the scraping can be found in `results.xlsx` under the root directory.
     * the results of the sanitisation and manipulation can be found in `processedData.csv` and `reportData.xlsx` under the root directory.
-7. The reportData.xlsx will be further process to extract the data for each car manufactures
-9. Generate a bar graph for each car manufactures data
-10. Insert each car manufacture data and the corresponding graph into a word document
-11. Export the word document to PDF
+    * `The reportData.xlsx` will be further process to extract the data for each car.manufactures
+    * Generate a bar graph for each car manufactures data.
+    * nsert each car manufacture data and the corresponding graph into a word document.
+    * Export the word document to PDF.
+
 ## Implementation Notes
 
 ### Scraping
@@ -43,7 +46,8 @@ Environmentally Friendly Second-hand Cars
 > * This process also generates a spreadsheet containing the subset of the data in the above spreadsheet and the counts of each PHEV for the convience of the report generation.
 
 ### Generate PDF
+
 > * Produce a csv file for each car brand in a new Folder call graphProcess.
-> * Use BlaReva.Excel package to produce a graph for each car brand in graphProcess
-> * Write each car brand data and graph to a word document (report.docx)
-> * Export the word document to PDF (report.pdf)
+> * Use BlaReva.Excel package to produce a graph for each car brand in graphProcess.
+> * Write each car brand data and graph to a word document (`report.docx`).
+> * Export the word document to PDF (`report.pdf`).
