@@ -24,8 +24,10 @@ Environmentally Friendly Second-hand Cars
 6. After the automation is completed
     * the results of the scraping can be found in `results.xlsx` under the root directory.
     * the results of the sanitisation and manipulation can be found in `processedData.csv` and `reportData.xlsx` under the root directory.
-7. _<= More steps to be added here_
-
+7. The reportData.xlsx will be further process to extract the data for each car manufactures
+9. Generate a bar graph for each car manufactures data
+10. Insert each car manufacture data and the corresponding graph into a word document
+11. Export the word document to PDF
 ## Implementation Notes
 
 ### Scraping
