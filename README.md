@@ -20,11 +20,12 @@ Environmentally Friendly Second-hand Cars
 2. Open file named FindPHEVs.xaml _<= To be change to Main.xaml_
 3. **Make sure there are no instances of the relevant trademe page running on Edge**
 4. **Make sure all the spreadsheet files are NOT opened or being accessed somewhere else**
-5. Press `Ctrl + F6` to run (This will take approx 5 minutes, please don't close UiPath or terminate the automation within this time)
-6. After the automation is completed
+5. **Make sure NO word documents or pdf files are  opened or being accessed somewhere else**
+6. Press `Ctrl + F6` to run (This will take approx 5 minutes, please don't close UiPath or terminate the automation within this time)
+7. After the automation is completed
     * the results of the scraping can be found in `results.xlsx` under the root directory.
     * the results of the sanitisation and manipulation can be found in `processedData.csv` and `reportData.xlsx` under the root directory.
-7. The reportData.xlsx will be further process to extract the data for each car manufactures
+8. The reportData.xlsx will be further process to extract the data for each car manufactures
 9. Generate a bar graph for each car manufactures data
 10. Insert each car manufacture data and the corresponding graph into a word document
 11. Export the word document to PDF
