@@ -1,4 +1,4 @@
-# 762 Team 3 Project Implementation
+# INFOSYS 300 / SOFTENG 762 Team 3 Project Implementation
 
 Environmentally Friendly Second-hand Cars
 
@@ -18,11 +18,13 @@ Environmentally Friendly Second-hand Cars
 
 ## Usage
 
-1. Clone repo and open process in UiPath
+### Run with UiPath Studio
+
+1. Clone this repository and open the project in UiPath
 2. Open file named `Main.xaml`
 3. **Make sure there are no instances of the relevant trademe page running on Edge**
 4. **Make sure all the spreadsheet files are NOT opened or being accessed somewhere else**
-5. Press `Ctrl + F5` or click button to run the project (This will take a long while, please don't close UiPath or terminate the automation within this time)
+5. Press `Ctrl + F5` or click **_Run_** to run the project (This will take a long while, please don't close UiPath or terminate the automation within this time)
 6. After the automation is completed
     * the results of the scraping can be found in `results.xlsx` under the root directory.
     * the results of the sanitisation and manipulation can be found in `processedData.csv` and `reportData.xlsx` under the root directory.
@@ -30,6 +32,22 @@ Environmentally Friendly Second-hand Cars
     * Generate a bar graph for each car manufactures data.
     * nsert each car manufacture data and the corresponding graph into a word document.
     * Export the word document to PDF.
+
+### Run with UiPath Assistant
+
+1. Sign off from UiPath Assistant if you are already signed in.
+2. Use UiPaht Assistant with offline mode.
+3. Copy and paste `Auto-Generate-PHEV-Car-Report.1.0.1.nupkg` to `C:\ProgramData\UiPath\Packages`.
+4. Install the package.
+5. **Make sure there are no instances of the relevant trademe page running on Edge**
+6. Run the installed package (This will take a long while, please don't close UiPath or terminate the automation within this time).
+7. After the automation is completed, open the folder `%USERPROFILE%\.nuget\packages\auto-generate-phev-car-report\1.0.1\lib\net45`
+    * the results of the scraping can be found in `results.xlsx` under the directory.
+    * the results of the sanitisation and manipulation can be found in `processedData.csv` and `reportData.xlsx` under the directory.
+    * `The reportData.xlsx` will be further process to extract the data for each car.manufactures
+    * Generate a bar graph for each car manufactures data.
+    * nsert each car manufacture data and the corresponding graph into a word document  `report.docx`.
+    * Export the word document to PDF `report.pdf`.
 
 ## Implementation Notes
 
@@ -49,5 +67,5 @@ Environmentally Friendly Second-hand Cars
 
 > * Produce a csv file for each car brand in a new Folder call graphProcess.
 > * Use BlaReva.Excel package to produce a graph for each car brand in graphProcess.
-> * Write each car brand data and graph to a word document (`report.docx`).
-> * Export the word document to PDF (`report.pdf`).
+> * Write each car brand data and graph to a word document.
+> * Export the word document to PDF.
