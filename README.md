@@ -28,10 +28,10 @@ Environmentally Friendly Second-hand Cars
 6. After the automation is completed
     * the results of the scraping can be found in `results.xlsx` under the root directory.
     * the results of the sanitisation and manipulation can be found in `processedData.csv` and `reportData.xlsx` under the root directory.
-    * `The reportData.xlsx` will be further process to extract the data for each car.manufactures
+    * `reportData.xlsx` will be further process to extract the data for each car manufactures.
     * Generate a bar graph for each car manufactures data.
-    * nsert each car manufacture data and the corresponding graph into a word document.
-    * Export the word document to PDF.
+    * Insert each car manufacture data and the corresponding graph into a word document `report.docx`.
+    * Export the word document to PDF `report.pdf`.
 
 ### Run with UiPath Assistant
 
@@ -41,12 +41,12 @@ Environmentally Friendly Second-hand Cars
 4. Install the package.
 5. **Make sure there are no instances of the relevant trademe page running on Edge**
 6. Run the installed package (This will take a long while, please don't close UiPath or terminate the automation within this time).
-7. After the automation is completed, open the folder `%USERPROFILE%\.nuget\packages\auto-generate-phev-car-report\1.0.1\lib\net45`
+7. After the automation is completed, open the folder `%USERPROFILE%\.nuget\packages\auto-generate-phev-car-report\1.0.1\lib\net45`.
     * the results of the scraping can be found in `results.xlsx` under the directory.
     * the results of the sanitisation and manipulation can be found in `processedData.csv` and `reportData.xlsx` under the directory.
-    * `The reportData.xlsx` will be further process to extract the data for each car.manufactures
+    * `reportData.xlsx` will be further process to extract the data for each car manufactures.
     * Generate a bar graph for each car manufactures data.
-    * nsert each car manufacture data and the corresponding graph into a word document  `report.docx`.
+    * Insert each car manufacture data and the corresponding graph into a word document `report.docx`.
     * Export the word document to PDF `report.pdf`.
 
 ## Implementation Notes
