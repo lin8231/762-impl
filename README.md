@@ -39,3 +39,9 @@ Environmentally Friendly Second-hand Cars
 
 > * The data sanitisation and manipulation removed and handled unwanted data, and then transfered the data and saved it to a spreadsheet aligned with the required format in project PDF.
 > * This process also generates a spreadsheet containing the subset of the data in the above spreadsheet and the counts of each PHEV for the convience of the report generation.
+
+### Generate PDF
+> * Produce a csv file for each car brand in a new Folder call graphProcess.
+> * Use BlaReva.Excel package to produce a graph for each car brand in graphProcess
+> * Write each car brand data and graph to a word document (report.docx)
+> * Export the word document to PDF (report.pdf)
