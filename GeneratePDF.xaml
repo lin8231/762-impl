@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GeneratePDF" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="764,6822" sap2010:WorkflowViewState.IdRef="GeneratePDF_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bec="clr-namespace:BalaReva.Excel.Charts;assembly=BalaReva.Excel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GeneratePDF" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="778,6522.66666666667" sap2010:WorkflowViewState.IdRef="GeneratePDF_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bec="clr-namespace:BalaReva.Excel.Charts;assembly=BalaReva.Excel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -98,7 +98,7 @@
       <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GeneratePDF" sap:VirtualizedContainerService.HintSize="704,6757.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GeneratePDF" sap:VirtualizedContainerService.HintSize="704,6458" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DataDT" />
       <Variable x:TypeArguments="sd:DataTable" Name="manufactureDT" />
@@ -111,23 +111,6 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="662,259.333333333333" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_7" InstanceCachePeriod="3000" Workbook="[processedDataWB]" WorkbookPath="processedData.xlsx">
-      <ui:ExcelApplicationScope.Body>
-        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,150.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_36">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelCloseWorkbook DisplayName="Close Workbook" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelCloseWorkbook_1" Workbook="[processedDataWB]" />
-          </Sequence>
-        </ActivityAction>
-      </ui:ExcelApplicationScope.Body>
-    </ui:ExcelApplicationScope>
     <Sequence DisplayName="Check graph Process folder" sap:VirtualizedContainerService.HintSize="662,1248.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_17">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="graphProcess" />
