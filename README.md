@@ -9,6 +9,7 @@ Environmentally Friendly Second-hand Cars
 * **Mercury Lin**: Scraping data and storing to Excel
 * **Siwei Yang**: Excel data sanitisation/manipulation
 * **Kirsty Gong**: Export sanitised data to pdf
+* **Molina Vincent**: Exception Handling and Testing
 
 ## Prerequisites
 
