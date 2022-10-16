@@ -16,10 +16,12 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.10.6.0",
-  "projectVersion": "1.0.2",
+  "projectVersion": "1.0.3",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -28,7 +30,8 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -56,5 +59,6 @@
   "templateProjectData": {},
   "publishData": {
     "iconUrl": ".package/icon.png"
-  }
+  },
+  "targetFramework": "Legacy"
 }

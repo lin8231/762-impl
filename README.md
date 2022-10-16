@@ -18,8 +18,9 @@ Environmentally Friendly Second-hand Cars
   * This can be installed via UiPath Studio in `Home > Tools > UiPath Extensions > Edge`
 
 ## Final Result
-* **processedData.csv**: Contains the Make, Model, Year, Mileage, ImportHistory and FuelEconomy of all the listing
-* **report.pdf**: Contains a summarises record and graph for all the different PHEV models and their manufacturing year.  
+
+1. **processedData.csv**: Contains the Make, Model, Year, Mileage, ImportHistory and FuelEconomy of all the listing
+2. **report.pdf**: Contains a summarises record and graph for all the different PHEV models and their manufacturing year.  
 
 ## Usage
 
@@ -46,7 +47,7 @@ Environmentally Friendly Second-hand Cars
 4. Install the package.
 5. **Make sure there are no instances of the relevant trademe page running on Edge**
 6. Run the installed package (This will take a long while, please don't close UiPath or terminate the automation within this time).
-7. After the automation is completed, open the folder `%USERPROFILE%\.nuget\packages\auto-generate-phev-car-report\1.0.2\lib\net45`.
+7. After the automation is completed, open the folder `%USERPROFILE%\.nuget\packages\auto-generate-phev-car-report\1.0.3\lib\net45`.
     * the results of the scraping can be found in `results.xlsx` under the directory.
     * the results of the sanitisation and manipulation can be found in `processedData.csv` and `reportData.xlsx` under the directory.
     * `reportData.xlsx` will be further process to extract the data for each car manufactures.
