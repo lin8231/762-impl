@@ -43,7 +43,7 @@ Environmentally Friendly Second-hand Cars
 
 1. Sign off from UiPath Assistant if you are already signed in.
 2. Use UiPaht Assistant with offline mode.
-3. Copy and paste `Auto-Generate-PHEV-Car-Report.1.0.2.nupkg` to `C:\ProgramData\UiPath\Packages`.
+3. Copy and paste `Auto-Generate-PHEV-Car-Report.1.0.3.nupkg` to `C:\ProgramData\UiPath\Packages`.
 4. Install the package.
 5. **Make sure there are no instances of the relevant trademe page running on Edge**
 6. Run the installed package (This will take a long while, please don't close UiPath or terminate the automation within this time).
