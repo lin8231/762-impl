@@ -62,6 +62,7 @@ Environmentally Friendly Second-hand Cars
 > * There is a 6 second delay when the browser is first started up to allow the webpage to load.
 > * There is a 4 second delay when navigating to each new page to allow the new listings to load.
 > * The price column is extracted as a block of text instead of a single number, because the element for the price number is inconsistent depending on the type of sale. Hence, it is easier to extract the whole price block, and sanitise in the data manipulation stage.
+> * Inorder to scrap the import history, we scrapped the search with no import filter, nz new filter and the imported filter. Then we compare the three scrap result to determine the search history for each lists
 
 ### Data processing
 
