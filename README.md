@@ -17,6 +17,10 @@ Environmentally Friendly Second-hand Cars
 * **The UiPath extension for Edge is installed and enabled**, give all permissions.
   * This can be installed via UiPath Studio in `Home > Tools > UiPath Extensions > Edge`
 
+## Final Result
+* **processedData.csv**: Contains the Make, Model, Year, Mileage, ImportHistory and FuelEconomy of all the listing
+* **report.pdf**: Contains a summarises record and graph for all the different PHEV models and their manufacturing year.  
+
 ## Usage
 
 ### Run with UiPath Studio
