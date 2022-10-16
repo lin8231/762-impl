@@ -9,6 +9,7 @@
     "UiPath.Mail.Activities": "[1.15.2]",
     "UiPath.System.Activities": "[22.4.5]",
     "UiPath.UIAutomation.Activities": "[22.4.7]",
+    "UiPath.WebAPI.Activities": "[1.13.1]",
     "UiPath.Word.Activities": "[1.12.0-preview]"
   },
   "webServices": [],
@@ -18,9 +19,7 @@
   "projectVersion": "1.0.2",
   "runtimeOptions": {
     "autoDispose": false,
-    "netFrameworkLazyLoading": false,
     "isPausable": true,
-    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -29,8 +28,7 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false,
-    "mustRestoreAllDependencies": false
+    "startsInPiP": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -58,6 +56,5 @@
   "templateProjectData": {},
   "publishData": {
     "iconUrl": ".package/icon.png"
-  },
-  "targetFramework": "Legacy"
+  }
 }

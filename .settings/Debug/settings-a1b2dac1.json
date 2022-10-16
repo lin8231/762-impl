@@ -55,5 +55,13 @@
   "UiPath.UIAutomationNext.Activities.ApplicationCard.RuntimeBrowser": "None",
   "UiPath.UIAutomationNext.Activities.ApplicationCard.WebDriverMode": "Disabled",
   "UiPath.UIAutomationNext.Activities.ApplicationCard.WebDriverAutoDownload": "True",
-  "UiPath.UIAutomationNext.Activities.Logging.AuditLogLevel": "Trace"
+  "UiPath.UIAutomationNext.Activities.Logging.AuditLogLevel": "Trace",
+  "UiPath.UIAutomationNext.Activities.Generic.CaptureScreenshots": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWnd.InteractionMode": "HardwareEvents",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWeb.EdgeInteractionMode": "DebuggerApi",
+  "UiPath.UIAutomationNext.Activities.SearchStepsJava.InteractionMode": "HardwareEvents",
+  "UiPath.UIAutomationNext.Activities.SearchStepsSAP.InteractionMode": "HardwareEvents",
+  "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyTypedText": "False",
+  "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyActivities": "False",
+  "UiPath.UIAutomationNext.Activities.ApplicationCard.ResizeWindow": "None"
 }
