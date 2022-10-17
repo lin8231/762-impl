@@ -83,3 +83,4 @@ Environmentally Friendly Second-hand Cars
 > * Some delays replaced using element exists 
 > * Make - Model split using web URL instead of text displayed assuming the URL layout is the same for all data points
 > * Closing applications that the process will edit to avoid potential errors if the user forgets to close these files from a previous run
+> * Testing the final report output against expected data retrieved through manual extraction
