@@ -76,3 +76,10 @@ Environmentally Friendly Second-hand Cars
 > * Use BlaReva.Excel package to produce a graph for each car brand in graphProcess.
 > * Write each car brand data and graph to a word document.
 > * Export the word document to PDF.
+
+### Exception Handling and Testing
+
+> * Try Catch element added to points of potential failure
+> * Some delays replaced using element exists 
+> * Make - Model split using web URL instead of text displayed assuming the URL layout is the same for all data points
+> * Closing applications that the process will edit to avoid potential errors if the user forgets to close these files from a previous run
